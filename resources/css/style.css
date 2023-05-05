@@ -222,10 +222,6 @@ header .mobile {
         align-items: flex-start;
     }
 
-    .content img {
-
-    }
-
     .content .right {
         width: 100%;
     }
@@ -257,7 +253,6 @@ header .mobile {
 
 .learning .hero-group1 {
     display: flex;
-    flex-basis: ;
 }
 
 .learning .hero-group2 {
@@ -319,6 +314,107 @@ header .mobile {
         padding: 16px 16px 24px 16px;
         margin: 8px
     }
-
 }
 
+/* exhibit */
+.exhibit {
+    padding: 32px 0;
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.exhibit h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: rgb(70, 70, 70);
+    padding-bottom: 32px;
+    margin: 0;
+}
+
+.exhibit h3 {
+    margin: 0;
+    padding: 24px 0 8px;
+    color: rgb(70, 70, 70);
+}
+
+.exhibit p {
+    margin: 0;
+    color: rgb(150, 150, 150);
+}
+
+.exhibit .main{
+    display: flex;
+}
+
+.exhibit .video-container {
+    padding: 0 24px 24px 24px;
+    max-width: 60%;
+}
+
+.exhibit video {
+    max-width: 100%;
+}
+
+.exhibit .right {
+    display: flex;
+    flex-direction: column;
+}
+
+.exhibit-banner {
+    display: flex;
+    align-items: center;
+}
+
+.exhibit-banner:hover {
+    background-color: rgb(230, 230, 230);
+}
+
+.exhibit-banner img {
+    max-width: 35%;
+    height: auto;
+    padding: 16px;
+}
+
+@media only screen and (max-width: 680px) {
+    .exhibit .desktop {
+        display: none;
+    }
+
+    .exhibit .video-container {
+        max-width: 100%;
+        padding: 0;
+    }    
+
+    .exhibit {
+        border-bottom:none;
+    }
+}
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 0 16px 24px;
+}
+
+footer p {
+    margin: 0;
+    color: rgb(150, 150, 150);
+}
+
+footer .desktop p {
+    padding: 0 8px;
+}
+
+footer .desktop {
+    display: flex;
+}
+
+footer li {
+    list-style: none;
+}
+
+@media only screen and (max-width: 680px) {
+    footer .desktop {
+        display: none;
+    }
+}
