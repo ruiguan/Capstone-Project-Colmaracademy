@@ -1,5 +1,7 @@
 body {
     margin: 0;
+    font-size: 16px;
+    font-family: helvetica;
 }
 
 /* header */
@@ -8,7 +10,6 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 64px;
-    font-family: Helvetica;
     padding: 0 24px;
 }
 
@@ -55,10 +56,269 @@ header .mobile {
     background-color: rgb(230, 230, 230);
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
-section img {
+.banner .image-container {
     padding: 32px 24px;
     max-width: 60%;
 }
+
+.banner img {
+    max-width: 100%;
+}
+
+.banner .text {
+    font-family: Helvetica;
+    color: rgb(70, 70, 70);
+    width: 30%;
+}
+
+.banner h1 {
+    font-size: 2.5rem;
+}
+
+.banner h3 {
+    font-weight: 300;
+
+}
+
+.banner .button {
+    background-color: rgb(70, 70, 70);
+}
+
+.button h3 {
+    padding: 8px;
+    color: white;
+    text-align: center;
+}
+
+@media only screen and (max-width: 680px) {
+    .banner {
+        display: block;
+    }
+
+    .banner .image-container {
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .banner .text {
+        padding: 32px 16px;
+        width: auto;
+    }
+
+    .banner h1 {
+        margin: 0;
+    }
+
+    .banner .button {
+        background-color: rgb(150, 150, 150);
+    }
+
+    .button h3 {
+        margin: 0;
+    }
+}
+
+/* content */
+
+.content {
+    display: flex;
+}
+
+.content .left {
+    padding: 32px 24px;
+    max-width: 60%;
+}
+
+.left img {
+    max-width: 100%;
+}
+
+.left h1 {
+    margin: 0;
+    padding: 32px 0 24px 0;
+    font-size: 2.5rem;
+    color: rgb(70, 70, 70);
+}
+
+.left p {
+    color: rgb(150, 150, 150);
+    margin: 0;
+}
+
+.left h4 {
+    color: rgb(150, 150, 150);
+    font-weight: 500;
+    margin: 32px 0;
+}
+
+.content .right {
+    border-left: 1px solid rgb(230, 230, 230);
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content-banner {
+    display: flex;
+    padding: 16px;
+    align-items: center;
+}
+
+.right .desktop {
+    max-width: 35%;
+    height: auto;
+}
+
+.banner-text {
+    padding-left: 16px;
+}
+
+.banner-text h3 {
+    color: rgb(70, 70, 70);
+    margin: 0;
+}
+
+.banner-text p {
+    font-size: 14px;
+    color: rgb(150, 150, 150);
+    padding: 8px 0;
+    margin: 0;
+}
+
+.banner-text a {
+    text-decoration: none;
+}
+
+.read-more {
+    color: rgb(0, 157, 255);
+    font-size: 14px;
+}
+
+.content-banner:hover {
+    background-color: rgb(230, 230, 230);
+}
+
+.content .mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 680px) {
+    .content .desktop {
+        display: none;
+    }
+
+    .content .mobile {
+        display: block;
+        padding: 16px 0;
+        width: 100%;
+    }
+
+    .content-banner {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .content img {
+
+    }
+
+    .content .right {
+        width: 100%;
+    }
+
+    .banner-text {
+        padding-left: 16px;
+    }
+}
+
+/* learning */
+
+.learning .mobile {
+    display: none;
+}
+
+.learning {
+    background-color: rgb(230, 230, 230);
+    padding: 0 72px;
+    display: flex;
+    flex-direction: column;
+}
+
+.learning h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: rgb(70, 70, 70);
+    margin: 32px 0;
+}
+
+.learning .hero-group1 {
+    display: flex;
+    flex-basis: ;
+}
+
+.learning .hero-group2 {
+    display: flex;
+}
+
+.learning .hero {
+    background-color: white;
+    margin: 16px 16px;
+    width: 30%;
+}
+
+.hero h3 {
+    margin: 0;
+    padding: 16px;
+    color: rgb(70, 70, 70);
+}
+
+.hero span {
+    margin: 0;
+    padding: 8px 16px;
+    color: rgb(150, 150, 150);
+}
+
+.hero p {
+    margin: 0;
+    padding: 16px 0 24px 16px;
+    color: rgb(150, 150, 150);
+}
+
+.hero img {
+    height: auto;
+    width: 100%;
+}
+
+@media only screen and (max-width: 680px) {
+    .learning {
+        background-color: white;
+        padding: 32px;
+        border-top: 1px solid rgb(230, 230, 230);
+        border-bottom: 1px solid rgb(230, 230, 230);
+    }
+
+    .learning h1 {
+        margin: 0;
+        padding-bottom: 16px;
+    }
+
+    .learning .desktop {
+        display: none;
+    }
+
+    .learning .mobile {
+        display: block;
+    }
+
+    .learning .mobile h3 {
+        background-color: rgb(230, 230, 230);
+        padding: 16px 16px 24px 16px;
+        margin: 8px
+    }
+
+}
+
